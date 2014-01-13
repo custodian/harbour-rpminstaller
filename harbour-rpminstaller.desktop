@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+X-Nemo-Application-Type=silica-qt5
+Name=RPM Installer
+Icon=harbour-rpminstaller
+#Exec=harbour-rpminstaller
+Exec=harbour-rpminstaller %U
+#MimeType=application/x-rpm;

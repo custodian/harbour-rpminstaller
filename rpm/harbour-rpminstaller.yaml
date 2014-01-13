@@ -1,0 +1,30 @@
+Name: harbour-rpminstaller
+Summary: RPM Installer
+Version: 1.0
+Release: 3
+Group: Qt/Qt
+URL: https://openrepos.net/
+License: GPLv3
+Sources:
+- '%{name}-%{version}.tar.bz2'
+Description: |
+  This application allows you to install local rpm application packages.
+Configure: none
+Builder: qtc5
+PkgConfigBR:
+- sailfishapp >= 0.0.10
+- Qt5Core
+- Qt5Qml
+- Qt5Quick
+Requires:
+- sailfishsilica-qt5 >= 0.10.9
+Files:
+- /usr/share/icons/hicolor/86x86/apps
+- /usr/share/applications
+- /usr/share/harbour-rpminstaller
+- /usr/bin
+- '%{_datadir}/icons/hicolor/86x86/apps/%{name}.png'
+- '%{_datadir}/applications/%{name}.desktop'
+- '%{_datadir}/%{name}/qml'
+- '%{_bindir}'
+PkgBR: []
